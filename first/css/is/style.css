@@ -1,0 +1,425 @@
+:root{
+    --primary-color: rgb(46, 226, 181);;
+    --secondary-color: #34b752;
+    
+    }
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: fit-content;
+
+    text-align: center;
+    
+}
+#container {
+    width: 100%;
+    background-color: rgb(209, 166, 250);
+    background-clip: content-box;
+    border-radius: 30px;
+    display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   flex-flow: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   align-content: flex-start;
+
+}
+
+#container .sec1 .paragraph1 {
+    
+    color: salmon;
+    background: seagreen;
+    font-style: italic;
+    font-size: 20px;
+    padding: 20px;
+   margin: 20px;
+   border: 5px solid red;
+    border-radius: 50px;
+    background: royalblue;
+    
+
+}
+
+#container .sec2 .paragraph2 {
+
+    color: salmon;
+    background: seagreen;
+    font-style: italic;
+    font-size: 20px;
+    padding: 20px;
+   margin: 20px;
+   border: 5px solid red;
+    border-radius: 50px;
+    
+}
+
+#container .sec3 .paragraph3 {
+
+    color: salmon;
+    background: rgb(139, 46, 108);
+    font-style: italic;
+    font-size: 20px;
+    padding: 20px;
+   margin: 20px;
+   border: 5px solid red;
+    border-radius: 50px;
+    
+}
+
+#container .sec1{
+    width: 50%;
+}
+
+#container .sec2{
+    width: 50%;
+}
+
+#container .sec3{
+    width: 50%;
+}
+.index-header{
+    background-color: brown;
+    color: white;
+    box-shadow: 0 0 3px 0 black .8;
+    /* opacity: .8; */
+    margin-bottom: 30px;
+    /* position: fixed; */
+    /* top: 0; */
+    /* bottom: 0; */
+}
+
+.index-header .index-header-h1 .a{
+     text-decoration: none;
+    color:white;
+
+ }
+  .row{
+      display: flex;
+      flex-direction: row;
+      
+      
+      width: 100%;
+  }
+
+.col{
+    width: 33.33%;
+}
+.col-2{
+    width: 46.67%;
+    
+}
+
+.col-3{
+    align-items: right;
+    width: 20%;
+    padding: 20px;
+    overflow: hidden;
+    
+}
+
+.main-nav ul{
+    background-color: var(--sec);
+    padding-bottom: 30px;
+    overflow: visible;
+    transition: max-height .4s;
+    
+}
+
+.main-nav ul li{
+    box-sizing: border-box;
+    
+    padding: 20px;
+    line-height: 1.4;
+}
+
+
+
+.header-logo-col-1 img{
+    width: 115px;
+    height: auto;
+
+}
+.header-text-col-2 h5{
+    font-size: 21px;
+    margin-top: 12px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+
+}
+
+.navbar-menu{
+    border: 1px solid brown;
+
+}
+.main-nav{
+    padding: 0;
+    margin: 0;
+   
+
+} 
+.main-nav ul{
+    list-style: none;
+    text-align: center;
+
+}
+
+.main-nav ul li{
+   
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    
+    height:80px; 
+    line-height: 40px;
+    
+
+}
+.main-nav ul li ul{
+        position: absolute;
+        left: 0px;
+        top:80px ;
+        
+        padding: 25px;
+        display: none;
+        transition:0.6s ease-in-out;
+        
+    
+}
+.main-nav ul li ul li a{
+    
+   font-size: 12px;
+    
+
+}
+
+
+.main-nav ul li:hover ul{
+    display: block;
+    background-color: brown;
+}
+
+.main-nav ul li:hover{
+    background-color: var(--primary-color);
+}
+
+.main-nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.handle{
+    box-sizing: border-box;
+    width: 100%;
+    padding:10px;
+    font-weight: bold;
+    font-size: 18px;
+    display: none;
+}
+#menu-handle{
+    display: none;
+}
+
+
+
+.btn{
+    border: none;
+    border-radius: 20%;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 15px 15px rgb(0 0 0 / 60%);
+    margin: 9px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 187px;
+    height: 3px;
+    padding-top: 22px;
+    padding-bottom: 30px;
+}
+ .login-btn {
+    background-color: violet;
+    margin-left: 175px; 
+    }
+ .signup-btn {
+    background-color: tomato;
+}
+
+header h2{
+    text-align: center;
+    font-size: 30px;
+    color:blueviolet ;
+    text-transform: uppercase;
+    
+    margin: 5px;
+}
+header h1{
+    text-align: center;
+    font-size: 45px;
+    color: white; 
+    /* background-color: azure;  */
+    text-transform: uppercase; 
+    align-content: center;
+    margin: 10px;
+
+}
+footer {
+    font-size: 20px;
+    color:slateblue;
+    text-transform: uppercase;
+    
+
+}
+
+@media screen and (min-width: 680px)
+{
+    #container .sec1{
+        width: 100%;
+    }
+    
+    #container .sec2{
+        width: 100%;
+    }
+    
+    #container .sec3{
+        width: 100%;
+    }
+
+
+    #container {
+        
+       flex-direction: row;
+       flex-wrap: wrap;
+       flex-flow: row;
+       
+    
+    }
+
+    #container .sec1 .paragraph1 {
+
+       
+        padding: 15px;
+       margin: 11px;
+      
+    }
+
+    #container .sec2 .paragraph2 {
+
+       
+        padding: 15px;
+       margin: 11px;
+      
+    }
+
+    #container .sec3 .paragraph3 {
+
+       
+        padding: 15px;
+       margin: 11px;
+      
+    }
+    .main-nav ul li{
+        /* margin-right: 25px; */
+        display:inline-block;
+        
+    }
+
+
+}
+
+@media screen and (max-width: 680px)
+{
+    #container .sec1 .paragraph1 {
+
+       
+        padding: 15px;
+        margin: 10px 20px;
+      
+    }
+
+    #container .sec2 .paragraph2 {
+
+       
+        padding: 15px;
+       margin: 10px 20px;
+      
+    }
+
+    #container .sec3 .paragraph3 {
+
+       
+        padding: 15px;
+        margin: 10px 20px;
+      
+    }
+
+    #container .sec1{
+        width: 100%;
+    }
+    
+    #container .sec2{
+        width: 100%;
+    }
+    
+    #container .sec3{
+        width: 100%;
+    }
+
+
+    .col .col-3{
+        width: 100%;
+    }
+     .row{
+         flex-flow: column;
+         display: inline-block;
+     }
+     nav ul{
+        max-height: 0;
+    }
+    nav ul li{
+        width:100%;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .col{
+        width:100%;
+    }
+    .handle{
+        display: block;
+    }
+    #menu-handle:checked + nav ul{
+        max-height: 25rem;
+    }
+
+    .main-nav ul{
+        
+        overflow: hidden;
+                
+    }
+    .main-nav ul li{
+       
+        
+        padding: 29px;
+        
+    }
+
+    .btn{
+        padding: 40px;
+    }
+    .login-btn{
+        margin-left: -40px;
+    }
+    .header-logo-col-1 img{
+        width: 25vh;
+    }
+
+
+
+
+}
+
